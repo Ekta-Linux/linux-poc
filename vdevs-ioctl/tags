@@ -1,0 +1,65 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BUFF_SIZE	vdevs_test.c	35;"	d	file:
+CLASS_NAME	vdevs_drv.c	38;"	d	file:
+DEV_NAME	vdevs_test.c	/^char DEV_NAME[512];$/;"	v
+DRVNAME	vdevs_drv.c	37;"	d	file:
+KDIR	Makefile	/^KDIR= \/lib\/modules\/$(shell uname -r)\/build$/;"	m
+NO_OF_DEVS	vdevs_drv.c	40;"	d	file:
+RDONLY	platform.h	27;"	d
+RDWR	platform.h	29;"	d
+VDEV_FILLCHAR	platform.h	41;"	d
+VEDA_MAGIC	platform.h	39;"	d
+WRONLY	platform.h	28;"	d
+buffer	vdevs_drv.c	/^	char *buffer;$/;"	m	struct:vDev_config_data	file:
+check_permission	vdevs_drv.c	/^int check_permission(int permission, int access_mode)$/;"	f
+dev	vdevs_drv.c	/^	struct device *dev;$/;"	m	struct:vDev_config_data	typeref:struct:vDev_config_data::device	file:
+devid	vdevs_drv.c	/^	dev_t devid;$/;"	m	struct:vDev_config_data	file:
+drv_pdata	vdevs_drv.c	/^} drv_pdata;$/;"	v	typeref:struct:vDrv_private_data
+main	vdevs_test.c	/^int main(int argc, char *argv[])$/;"	f
+major_base	vdevs_drv.c	/^	dev_t major_base;$/;"	m	struct:vDrv_private_data	file:
+obj-m	Makefile	/^obj-m  := vdevs_platform.o vdevs_drv.o$/;"	m
+pdata	vdevs_drv.c	/^	struct virtual_platform_data pdata;$/;"	m	struct:vDev_config_data	typeref:struct:vDev_config_data::virtual_platform_data	file:
+permission	platform.h	/^    int permission;$/;"	m	struct:virtual_platform_data
+platform_vdev_1	vdevs_platform.c	/^struct platform_device platform_vdev_1 = {$/;"	v	typeref:struct:platform_device
+platform_vdev_2	vdevs_platform.c	/^struct platform_device platform_vdev_2 = {$/;"	v	typeref:struct:platform_device
+platform_vdev_3	vdevs_platform.c	/^struct platform_device platform_vdev_3 = {$/;"	v	typeref:struct:platform_device
+platform_vdev_4	vdevs_platform.c	/^struct platform_device platform_vdev_4 = {$/;"	v	typeref:struct:platform_device
+platform_vdevs	vdevs_platform.c	/^struct platform_device *platform_vdevs[] = {$/;"	v	typeref:struct:platform_device
+receive_buff	vdevs_test.c	/^char receive_buff[BUFF_SIZE];$/;"	v
+serial_number	platform.h	/^    const char *serial_number;$/;"	m	struct:virtual_platform_data
+size	platform.h	/^    int size;$/;"	m	struct:virtual_platform_data
+total_device	vdevs_drv.c	/^	int total_device;$/;"	m	struct:vDrv_private_data	file:
+tranfer_buff	vdevs_test.c	/^char tranfer_buff[BUFF_SIZE];$/;"	v
+user_read	vdevs_test.c	/^int user_read(int size)$/;"	f
+user_write	vdevs_test.c	/^int user_write(void)$/;"	f
+vDev_config_data	vdevs_drv.c	/^struct vDev_config_data {$/;"	s	file:
+vDev_platform_exit	vdevs_platform.c	/^module_exit(vDev_platform_exit);$/;"	v
+vDev_platform_exit	vdevs_platform.c	/^static void __exit vDev_platform_exit(void)$/;"	f	file:
+vDev_platform_init	vdevs_platform.c	/^module_init(vDev_platform_init);$/;"	v
+vDev_platform_init	vdevs_platform.c	/^static int __init vDev_platform_init(void)$/;"	f	file:
+vDevs_ids	vdevs_drv.c	/^struct platform_device_id vDevs_ids[] = {$/;"	v	typeref:struct:platform_device_id
+vDrv_private_data	vdevs_drv.c	/^struct vDrv_private_data {$/;"	s	file:
+vdev_ioctl	vdevs_drv.c	/^static long vdev_ioctl(struct file *file, unsigned int cmd, unsigned long arg)$/;"	f	file:
+vdev_lseek	vdevs_drv.c	/^loff_t vdev_lseek(struct file *filp, loff_t offset, int whence)$/;"	f
+vdev_open	vdevs_drv.c	/^int vdev_open(struct inode *inode, struct file *filp)$/;"	f
+vdev_ops	vdevs_drv.c	/^struct file_operations vdev_ops = {$/;"	v	typeref:struct:file_operations
+vdev_pdata	vdevs_platform.c	/^struct virtual_platform_data vdev_pdata[] = {$/;"	v	typeref:struct:virtual_platform_data
+vdev_platform_driver	vdevs_drv.c	/^struct platform_driver vdev_platform_driver = {$/;"	v	typeref:struct:platform_driver
+vdev_read	vdevs_drv.c	/^ssize_t vdev_read(struct file *filp, char __user * buff, size_t count,$/;"	f
+vdev_release	vdevs_drv.c	/^int vdev_release(struct inode *inode, struct file *filp)$/;"	f
+vdev_release	vdevs_platform.c	/^void vdev_release(struct device *dev)$/;"	f
+vdev_write	vdevs_drv.c	/^ssize_t vdev_write(struct file *filp, const char __user * buff, size_t count,$/;"	f
+vdrv_platform_reg	vdevs_drv.c	/^module_init(vdrv_platform_reg);$/;"	v
+vdrv_platform_reg	vdevs_drv.c	/^static int __init vdrv_platform_reg(void)$/;"	f	file:
+vdrv_platform_unreg	vdevs_drv.c	/^module_exit(vdrv_platform_unreg);$/;"	v
+vdrv_platform_unreg	vdevs_drv.c	/^static void __exit vdrv_platform_unreg(void)$/;"	f	file:
+vdrv_probe	vdevs_drv.c	/^static int vdrv_probe(struct platform_device *pdev)$/;"	f	file:
+vdrv_remove	vdevs_drv.c	/^static int vdrv_remove(struct platform_device *pdev)$/;"	f	file:
+veda_cdev	vdevs_drv.c	/^	struct cdev veda_cdev;$/;"	m	struct:vDev_config_data	typeref:struct:vDev_config_data::cdev	file:
+virtual	vdevs_drv.c	/^	struct class *virtual;$/;"	m	struct:vDrv_private_data	typeref:struct:vDrv_private_data::class	file:
+virtual_platform_data	platform.h	/^struct virtual_platform_data {$/;"	s
